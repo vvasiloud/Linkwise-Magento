@@ -30,6 +30,10 @@ How to use?
 
 2. Set your Linkwise ID, decimal separator, numeric currency (default is 978 for euro) and retargeting pages types you like
 
+Screenshot
+----------
+
+![Screenshot](Screenshot.jpg?raw=true)
 
 Support
 -------
