@@ -1,0 +1,15 @@
+<?php if ($this->isEnabled()): ?>
+<script>
+/* <![CDATA[ */
+lw("setCurrency", "<?php echo $this->getNumericCurrency(); ?>");
+<?php echo $this->getLinkwiseProducts(); ?>
+lw("thankyou", {
+orderid: "<?php echo $this->getLastRealOrderId(); ?>"
+,status: "pending"
+});
+ /* ]]> */ 
+</script>
+<noscript>
+<img src="<?php echo $this->getLinkwiseProductsAsUrl(); ?>" style="width:0px;height:0px;"/>
+</noscript>
+<?php endif; ?> 

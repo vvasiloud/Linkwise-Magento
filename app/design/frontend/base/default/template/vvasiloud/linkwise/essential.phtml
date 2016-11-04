@@ -1,0 +1,11 @@
+<?php if ($this->isEnabled()): ?>
+<script async src="//go.linkwi.se/delivery/js/tl.js"></script>
+<script>
+/* <![CDATA[ */
+window.lw=window.lw||function(){(lw.q=lw.q||[]).push(arguments)};lw.l
+=+new Date;
+lw("setProgram", "<?php echo $this->getLinkwiseId(); ?>");
+lw("setDecimal", "<?php echo $this->getDecimalSeparator(); ?>");
+ /* ]]> */
+</script>
+<?php endif; ?> 

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Vvasiloud_Linkwise>
+      <version>0.1.0</version>
+    </Vvasiloud_Linkwise>
+  </modules>
+  <global>
+    <helpers>
+      <linkwise>
+        <class>Vvasiloud_Linkwise_Helper</class>
+      </linkwise>
+    </helpers>
+	<blocks>
+		<linkwise>
+			<class>Vvasiloud_Linkwise_Block</class>
+		</linkwise>
+	</blocks>	
+  </global>
+	<frontend>
+		<layout>
+			<updates>
+				<linkwise>
+					<file>vvasiloud/linkwise.xml</file>
+				</linkwise>
+			</updates>
+		</layout>
+	</frontend>  
+</config> 

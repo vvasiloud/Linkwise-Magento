@@ -1,0 +1,9 @@
+<?php if ($this->isEnabled() && in_array('product_page', $this->getRetargetingPages())): ?>
+<?php $_product = Mage::registry('current_product'); ?>
+<script>
+lw("addItem", {
+id: "<?php echo $_product->getId(); ?>"
+,price: "<?php echo Mage::helper('tax')->getPrice($_product, $_product->getFinalPrice(), false );?>"});
+lw("viewItem");
+</script>
+<?php endif; ?>  

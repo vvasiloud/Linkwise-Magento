@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/essential" name="linkwise_essential" template="vvasiloud/linkwise/essential.phtml"/>
+            </reference>
+        </reference>
+    </default>
+
+    <checkout_onepage_success>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/success" name="linkwise_success" template="vvasiloud/linkwise/success.phtml"/>
+            </reference>
+        </reference>
+    </checkout_onepage_success>
+	
+	<cms_index_index>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/generic" name="linkwise_homepage" template="vvasiloud/linkwise/homepage.phtml"/>
+            </reference>
+        </reference>	
+	</cms_index_index>
+	
+	<checkout_onepage_index>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/generic" name="linkwise_checkout" template="vvasiloud/linkwise/checkout.phtml"/>
+            </reference>
+        </reference>	
+	</checkout_onepage_index>	
+	
+	<catalog_product_view>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/generic" name="linkwise_product" template="vvasiloud/linkwise/product.phtml"/>
+            </reference>
+        </reference>	
+	</catalog_product_view>
+
+	<checkout_cart_index>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/cart" name="linkwise_cart" template="vvasiloud/linkwise/cart.phtml"/>
+            </reference>
+        </reference>	
+	</checkout_cart_index>		
+
+	<catalog_category_default>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/productlist" name="linkwise_category" template="vvasiloud/linkwise/category.phtml"/>
+            </reference>
+        </reference>	
+	</catalog_category_default>	
+
+	<catalog_category_layered>
+        <reference name="root">
+            <reference name="after_body_start">
+                <block type="linkwise/productlist" name="linkwise_category" template="vvasiloud/linkwise/category.phtml"/>
+            </reference>
+        </reference>	
+	</catalog_category_layered>		
+</layout>   

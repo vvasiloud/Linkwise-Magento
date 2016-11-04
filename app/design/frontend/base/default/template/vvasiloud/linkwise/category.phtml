@@ -1,0 +1,6 @@
+<?php if ($this->isEnabled() && in_array('product_listing', $this->getRetargetingPages())): ?>
+<script>
+<?php echo $this->getLinkwiseCategoryProducts(); ?>
+lw("listItems");
+</script>
+<?php endif; ?>  
